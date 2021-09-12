@@ -50,7 +50,7 @@ describe("Fractionalized Token tests", function() {
         expect(balance).to.equal(1);
     });
 
-    it("Should purchase ERC721 token and hold valid ERC721 balance and distribute ERC20 tokens validly", async function() {
+    it("Should purchase ERC721 token and hold valid ERC721 balance and distribute funds to ERC20 token holders", async function() {
         console.log(await addr2.getBalance());
         await tikTokNFT.connect(addr1).purchase({ value: "100000000000000000" });
         
